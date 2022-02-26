@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddFrindeView" customModule="ChatApp" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="IQe-mr-zQl">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="IFS-Jw-2xh">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="411"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N33-DL-gg7">
+                    <rect key="frame" x="30" y="419" width="260" height="45"/>
+                    <color key="backgroundColor" red="0.39262413979999999" green="0.27681541440000001" blue="0.84810417890000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="2Pk-P6-MQS"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Selected">
+                        <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </buttonConfiguration>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="khi-cL-rDC"/>
+            <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="IFS-Jw-2xh" firstAttribute="leading" secondItem="khi-cL-rDC" secondAttribute="leading" id="1TX-12-ytN"/>
+                <constraint firstItem="IFS-Jw-2xh" firstAttribute="trailing" secondItem="khi-cL-rDC" secondAttribute="trailing" id="4rd-p0-1cA"/>
+                <constraint firstItem="N33-DL-gg7" firstAttribute="leading" secondItem="khi-cL-rDC" secondAttribute="leading" constant="30" id="RWi-mW-Iwa"/>
+                <constraint firstItem="N33-DL-gg7" firstAttribute="top" secondItem="IFS-Jw-2xh" secondAttribute="bottom" constant="8" id="SQN-Pc-WOd"/>
+                <constraint firstItem="khi-cL-rDC" firstAttribute="bottom" secondItem="N33-DL-gg7" secondAttribute="bottom" constant="16" id="l54-46-cvK"/>
+                <constraint firstItem="IFS-Jw-2xh" firstAttribute="top" secondItem="khi-cL-rDC" secondAttribute="top" id="ncc-Zg-Zoa"/>
+                <constraint firstItem="khi-cL-rDC" firstAttribute="trailing" secondItem="N33-DL-gg7" secondAttribute="trailing" constant="30" id="xJh-gL-ya7"/>
+            </constraints>
+            <point key="canvasLocation" x="140.625" y="116.25"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
