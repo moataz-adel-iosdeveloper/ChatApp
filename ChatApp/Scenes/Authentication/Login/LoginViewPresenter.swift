@@ -32,7 +32,7 @@ class LoginViewPresenter: LoginPresenterProtocol {
             case .success(_):
                 self.view?.loginSuccess()
             case .failure(let error):
-                self.view?.errorInAction(errorMessage: error.description)
+                self.view?.errorInAction(errorMessage: error.userInfo[NSLocalizedDescriptionKey] as? String ?? "")
             }
         })
     }
@@ -40,10 +40,10 @@ class LoginViewPresenter: LoginPresenterProtocol {
     private func validationLogain(phoneNumber: String?, password: String?) -> String {
         var errorMessage = ""
         if phoneNumber == "" || phoneNumber == nil {
-            errorMessage = errorMessage + "  " + "Phone Number is empty"
+            errorMessage = errorMessage + "  " + "Phone Number is required"
         }
         if password == "" || password == nil {
-            errorMessage = errorMessage + "  " + "Password is empty"
+            errorMessage = errorMessage + "  " + "Password is required"
         }
         return errorMessage
     }

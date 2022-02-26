@@ -17,6 +17,8 @@
 		D1BB1EFA27CA5B3A00369A20 /* AuthenticationServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BB1EF927CA5B3A00369A20 /* AuthenticationServices.swift */; };
 		D1BB1EFC27CA5D1200369A20 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BB1EFB27CA5D1200369A20 /* UserModel.swift */; };
 		D1BB1EFE27CA6FC200369A20 /* UserDefaultswWrapped.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BB1EFD27CA6FC200369A20 /* UserDefaultswWrapped.swift */; };
+		D1BB1F0027CA815500369A20 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BB1EFF27CA815500369A20 /* UIButton.swift */; };
+		D1BB1F0227CA948A00369A20 /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BB1F0127CA948A00369A20 /* ProfilePresenter.swift */; };
 		D1CF419B27C8135900C6E6CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CF419A27C8135900C6E6CB /* AppDelegate.swift */; };
 		D1CF41A427C8135E00C6E6CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1CF41A327C8135E00C6E6CB /* Assets.xcassets */; };
 		D1CF41A727C8135E00C6E6CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1CF41A527C8135E00C6E6CB /* LaunchScreen.storyboard */; };
@@ -90,6 +92,8 @@
 		D1BB1EF927CA5B3A00369A20 /* AuthenticationServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationServices.swift; sourceTree = "<group>"; };
 		D1BB1EFB27CA5D1200369A20 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		D1BB1EFD27CA6FC200369A20 /* UserDefaultswWrapped.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultswWrapped.swift; sourceTree = "<group>"; };
+		D1BB1EFF27CA815500369A20 /* UIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
+		D1BB1F0127CA948A00369A20 /* ProfilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePresenter.swift; sourceTree = "<group>"; };
 		D1CF419727C8135900C6E6CB /* ChatApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1CF419A27C8135900C6E6CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1CF41A327C8135E00C6E6CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -362,6 +366,7 @@
 		D1DC8F2927C91B640002564A /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				D1BB1EFF27CA815500369A20 /* UIButton.swift */,
 				D1BB1EF527CA440200369A20 /* ImageExtension.swift */,
 				D1DC8F2A27C91B860002564A /* UIViewExtension.swift */,
 				D1BB1EF727CA52B400369A20 /* UIViewControllerExtenstion.swift */,
@@ -374,6 +379,7 @@
 			children = (
 				D1DC8F3327C923760002564A /* Profile.swift */,
 				D1DC8F3127C923630002564A /* Profile.xib */,
+				D1BB1F0127CA948A00369A20 /* ProfilePresenter.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -743,7 +749,9 @@
 				D1DC8F2E27C920200002564A /* ChangePassWord.swift in Sources */,
 				D1BB1EF827CA52B400369A20 /* UIViewControllerExtenstion.swift in Sources */,
 				D1DC8F6927C973860002564A /* AuthenticationNetwork.swift in Sources */,
+				D1BB1F0227CA948A00369A20 /* ProfilePresenter.swift in Sources */,
 				D1BB1EF627CA440200369A20 /* ImageExtension.swift in Sources */,
+				D1BB1F0027CA815500369A20 /* UIButton.swift in Sources */,
 				D1DC8F3427C923760002564A /* Profile.swift in Sources */,
 				D1DC8F3B27C94FBA0002564A /* FrindesView.swift in Sources */,
 				D1DC8F1F27C904670002564A /* LoginView.swift in Sources */,

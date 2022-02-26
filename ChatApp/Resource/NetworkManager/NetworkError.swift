@@ -15,4 +15,8 @@ struct NetworkErrorMessage {
     
     static let parsingError = "Something went wrong in local , please contact support or try again later"
     
+    static let unauthorizedError = "Unauthorized request , please recheck your information"
+    
+    static let serverProsseingError = "information error , please recheck your information"
+    
 }

@@ -18,15 +18,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = UIWindow(frame: UIScreen.main.bounds)
         let defaults = UserDefaults.standard
         if (defaults.object(forKey: "user") as? Data) != nil {
-            //let decoder = JSONDecoder()
-            //if let student = try? decoder.decode(Student.self, from: studentData) {
-                //print(student.name)
-            //}
             window?.rootViewController = UINavigationController(rootViewController: FrindesView())
         }else {
             window?.rootViewController = UINavigationController(rootViewController: LoginView())
         }
-        
         window?.makeKeyAndVisible()
         return true
     }

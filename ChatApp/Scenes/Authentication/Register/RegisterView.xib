@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterView" customModule="ChatApp" customModuleProvider="target">
             <connections>
+                <outlet property="buttonSingup" destination="sex-Dn-D4k" id="wTO-IS-4xt"/>
                 <outlet property="imgUserProfile" destination="QjY-Gm-1vK" id="hxM-lk-yzr"/>
                 <outlet property="textPassword" destination="3oB-7r-RFw" id="f2E-m6-Kcf"/>
                 <outlet property="textPhoneNumber" destination="FNI-B7-K6v" id="WHf-Wg-l22"/>
@@ -35,7 +36,7 @@
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kd3-Fv-0CV">
                                     <rect key="frame" x="77.333333333333314" y="15" width="234" height="183"/>
                                     <state key="normal" title="Button"/>
-                                    <buttonConfiguration key="configuration" style="plain"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="  "/>
                                     <connections>
                                         <action selector="imgUserProfileAction:" destination="-1" eventType="touchUpInside" id="lqA-4q-Xs9"/>
                                     </connections>
@@ -209,13 +210,13 @@
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yaz-co-WMi">
                                     <rect key="frame" x="24" y="24.000000000000004" width="342" height="53.333333333333343"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign Up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sex-Dn-D4k">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign Up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sex-Dn-D4k" customClass="LoadingLabel" customModule="ChatApp" customModuleProvider="target">
                                             <rect key="frame" x="141" y="16.333333333333314" width="60" height="20.333333333333329"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mib-0A-rLC">
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mib-0A-rLC" customClass="LoadingButton" customModule="ChatApp" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="0.0" width="342" height="53.333333333333336"/>
                                             <connections>
                                                 <action selector="buttonSingupAction:" destination="-1" eventType="touchUpInside" id="MJc-M2-Va3"/>

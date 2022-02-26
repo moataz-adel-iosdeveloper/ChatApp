@@ -30,6 +30,12 @@ class AuthenticationServices : NetworkManager<AuthenticationNetwork>, Authentica
     
     func signUp(fullname: String, phone: String, password: String, img: UIImage, completion: @escaping (Result<UserModel?, NSError>) -> Void) {
         self.uploadData(target: AuthenticationNetwork.signUp(fullname: fullname, phone: phone, password: password, img: img), responseClass: UserModel.self) { (result) in
+            switch result {
+            case .success(let user):
+                user?.saveToUserDefaults()
+            case .failure(let error):
+                print(error.description)
+            }
             completion(result)
         }
     }

@@ -43,7 +43,16 @@ class NetworkManager<T: RequestType> {
                 }
                 completion(.success(responseObj))
             } else {
-                let error = NSError(domain: target.path, code: statusCode, userInfo: [NSLocalizedDescriptionKey: NetworkErrorMessage.serverError , NSLocalizedDescriptionKey:statusCode ])
+                var error = NSError()
+                if statusCode == 401 {
+                    error = NSError(domain: target.path,
+                                          code: statusCode,
+                                    userInfo: [NSLocalizedDescriptionKey: NetworkErrorMessage.unauthorizedError])
+                }else {
+                    error = NSError(domain: target.path,
+                                          code: statusCode,
+                                      userInfo: [NSLocalizedDescriptionKey: NetworkErrorMessage.serverError])
+                }
                 completion(.failure(error))
             }
         }
@@ -70,7 +79,7 @@ class NetworkManager<T: RequestType> {
                     completion(.failure(error))
                     return
                 }
-                if statusCode == 200 { // 200 reflect success response
+                if statusCode == 201 { // 200 reflect success response
                     // Successful request
                     guard let jsonResponse = try? response.result.get() else {
                         // ADD Custom Error
@@ -92,7 +101,21 @@ class NetworkManager<T: RequestType> {
                     }
                     completion(.success(responseObj))
                 } else {
-                    let error = NSError(domain: target.path, code: statusCode, userInfo: [NSLocalizedDescriptionKey: NetworkErrorMessage.serverError , NSLocalizedDescriptionKey:statusCode ])
+                    var error = NSError()
+                    switch statusCode {
+                    case 401:
+                        error = NSError(domain: target.path,
+                                              code: statusCode,
+                                        userInfo: [NSLocalizedDescriptionKey: NetworkErrorMessage.unauthorizedError])
+                    case 422:
+                        error = NSError(domain: target.path,
+                                              code: statusCode,
+                                          userInfo: [NSLocalizedDescriptionKey: NetworkErrorMessage.serverError])
+                    default:
+                        error = NSError(domain: target.path,
+                                              code: statusCode,
+                                        userInfo: [NSLocalizedDescriptionKey: NetworkErrorMessage.serverProsseingError])
+                    }
                     completion(.failure(error))
                 }
         }

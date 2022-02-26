@@ -11,12 +11,12 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Profile" customModule="ChatApp" customModuleProvider="target">
             <connections>
-                <outlet property="Price" destination="0Bo-ZM-i6v" id="clJ-VF-tRb"/>
                 <outlet property="imgArabicLangImage" destination="Z3h-sO-qbV" id="wDH-fr-67u"/>
                 <outlet property="imgEnglishLangImage" destination="eVa-zy-U5M" id="6MY-VA-eZB"/>
-                <outlet property="imgProfile" destination="tML-aG-Ly1" id="d5g-ul-Lgn"/>
-                <outlet property="textPhoneNumber" destination="ldo-kG-T2N" id="gxV-Yg-USc"/>
-                <outlet property="textUserName" destination="n5O-z4-sAK" id="gYS-gE-Aja"/>
+                <outlet property="imgProfile" destination="tML-aG-Ly1" id="w2E-bB-6y1"/>
+                <outlet property="lblSaveEdting" destination="iDW-g7-xEr" id="8kl-ZK-Fnb"/>
+                <outlet property="textPhoneNumber" destination="ldo-kG-T2N" id="w9u-T3-GHR"/>
+                <outlet property="textUserName" destination="n5O-z4-sAK" id="jvm-kX-nQf"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -44,7 +44,7 @@
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ydf-hx-0DX">
                                             <rect key="frame" x="64.5" y="8" width="99" height="82"/>
                                             <connections>
-                                                <action selector="buttonChangeUserImage_Clicked:" destination="-1" eventType="touchUpInside" id="XrJ-sZ-zHd"/>
+                                                <action selector="imgProfileAction:" destination="-1" eventType="touchUpInside" id="pW9-6w-vEM"/>
                                             </connections>
                                         </button>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1BG-j5-dOH">
@@ -270,7 +270,7 @@
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dTs-Dt-rXF">
                                                             <rect key="frame" x="8" y="0.0" width="272" height="35"/>
                                                             <connections>
-                                                                <action selector="buttonChangeLang_Clicked:" destination="-1" eventType="touchUpInside" id="ke6-Ox-xR4"/>
+                                                                <action selector="buttonChangeLang_Clicked:" destination="-1" eventType="touchUpInside" id="9CE-Fc-xpD"/>
                                                             </connections>
                                                         </button>
                                                     </subviews>
@@ -305,7 +305,7 @@
                                                         <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZA8-ac-2Wv">
                                                             <rect key="frame" x="8" y="0.0" width="272" height="34.5"/>
                                                             <connections>
-                                                                <action selector="buttonChangeLang_Clicked:" destination="-1" eventType="touchUpInside" id="64M-yG-3V3"/>
+                                                                <action selector="buttonChangeLang_Clicked:" destination="-1" eventType="touchUpInside" id="shr-ub-QXV"/>
                                                             </connections>
                                                         </button>
                                                     </subviews>
@@ -338,7 +338,7 @@
                                         <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lo9-eS-neF">
                                             <rect key="frame" x="24" y="72" width="240" height="40"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iDW-g7-xEr">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iDW-g7-xEr" customClass="LoadingLabel" customModule="ChatApp" customModuleProvider="target">
                                                     <rect key="frame" x="105.5" y="10" width="29.5" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -347,7 +347,7 @@
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S6x-7i-Kd8">
                                                     <rect key="frame" x="0.0" y="0.0" width="240" height="40"/>
                                                     <connections>
-                                                        <action selector="buttonSaveEdting:" destination="-1" eventType="touchUpInside" id="JjP-aS-c5M"/>
+                                                        <action selector="buttonSaveEdting:" destination="-1" eventType="touchUpInside" id="5zh-JJ-WJF"/>
                                                     </connections>
                                                 </button>
                                             </subviews>

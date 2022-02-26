@@ -11,6 +11,7 @@ target 'ChatApp' do
   pod 'IQKeyboardManagerSwift'
   pod 'Alamofire'
   pod 'Socket.IO-Client-Swift'
+  pod 'NVActivityIndicatorView' , '~> 5.1.1'
 end
 
   target 'ChatAppTests' do

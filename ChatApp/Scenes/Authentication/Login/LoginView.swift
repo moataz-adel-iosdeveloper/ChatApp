@@ -11,7 +11,7 @@ class LoginView: UIViewController {
     
     @IBOutlet weak var textPassword: UITextField!
     @IBOutlet weak var textPhoneNumber: UITextField!
-    
+    @IBOutlet weak var buttonSingin: LoadingLabel!
     private var presenter: LoginPresenterProtocol?
     
     init() {
@@ -24,7 +24,8 @@ class LoginView: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.buttonSingin.loadingColor = UIColor.white
+        self.buttonSingin.View = self
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -35,13 +36,15 @@ class LoginView: UIViewController {
         navigationController?.setNavigationBarHidden(false, animated: animated)
     }
     @IBAction func buttonSinginAction(_ sender: UIButton) {
+        self.buttonSingin.showLoading()
         presenter?.login(phoneNumber: textPhoneNumber.text!, password: textPassword.text!)
     }
     
     @IBAction func buttonForgetPasswordAction(_ sender: UIButton) {
     }
+    
     @IBAction func buttonSignUpAction(_ sender: UIButton) {
-        let vc = RegisterView(nibName: "RegisterView", bundle: nil)
+        let vc = RegisterView()
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
@@ -49,11 +52,14 @@ class LoginView: UIViewController {
 
 extension LoginView : LoginViewProtocol {
     func loginSuccess() {
-        <#code#>
+        self.buttonSingin.hideLoading()
+        let vc = FrindesView(nibName: "FrindesView", bundle: nil)
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     func errorInAction(errorMessage: String) {
-        self.showToast(message: errorMessage, seconds: 0.4)
+        self.buttonSingin.hideLoading()
+        self.showToast(message: errorMessage, seconds: 4)
     }
 
 }
