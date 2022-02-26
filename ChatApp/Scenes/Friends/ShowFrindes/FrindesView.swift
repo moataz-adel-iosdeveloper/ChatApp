@@ -9,18 +9,21 @@ import UIKit
 
 class FrindesView: UIViewController {
 
+    @IBOutlet weak var tableFrindes: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableFrindes.register(UINib(nibName: "FrindesViewCell", bundle: nil), forCellReuseIdentifier: "FrindesViewCell")
         self.navigationItem.setHidesBackButton(true, animated: true)
     }
 }
 
-//extension FrindesView : UITableViewDelegate , UITableViewDataSource {
-//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        return 3
-//    }
-//
-//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        return UITableViewCell.Type
-//    }
-//}
+extension FrindesView : UITableViewDelegate , UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 3
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableFrindes.dequeueReusableCell(withIdentifier: "FrindesViewCell", for: indexPath) as! FrindesViewCell
+        return cell
+    }
+}

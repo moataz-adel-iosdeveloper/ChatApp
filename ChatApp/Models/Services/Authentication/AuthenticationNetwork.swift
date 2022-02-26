@@ -91,13 +91,17 @@ extension AuthenticationNetwork: RequestType {
         case .signUp:
             return [:]
         case .updateInfo:
-//            let user = PublicRealm.objects(User.self)
-//            if user.count != 0 {
-//                url = Url.MyProfile(UserID: user[0].id)
-//            }else {
-//                return [:]
-//            }
-            return [:]
+            let defaults = UserDefaults.standard
+            if let user = defaults.object(forKey: "user") as? Data {
+                let decoder = JSONDecoder()
+                if let userModel : UserModel = try? decoder.decode(UserModel.self, from: user){
+                    return ["Authorization" : "Bearer \(userModel.token ?? "")"]
+                }else {
+                    return [:]
+                }
+            }else {
+                return [:]
+            }
         case .updatePassword:
             return [:]
         }

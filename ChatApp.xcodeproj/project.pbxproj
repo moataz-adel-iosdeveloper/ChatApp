@@ -19,6 +19,13 @@
 		D1BB1EFE27CA6FC200369A20 /* UserDefaultswWrapped.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BB1EFD27CA6FC200369A20 /* UserDefaultswWrapped.swift */; };
 		D1BB1F0027CA815500369A20 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BB1EFF27CA815500369A20 /* UIButton.swift */; };
 		D1BB1F0227CA948A00369A20 /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BB1F0127CA948A00369A20 /* ProfilePresenter.swift */; };
+		D1BB1F0527CABD5E00369A20 /* FrindesViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BB1F0327CABD5E00369A20 /* FrindesViewCell.swift */; };
+		D1BB1F0627CABD5E00369A20 /* FrindesViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1BB1F0427CABD5E00369A20 /* FrindesViewCell.xib */; };
+		D1BB1F0927CAC39E00369A20 /* FrindesViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BB1F0827CAC39E00369A20 /* FrindesViewPresenter.swift */; };
+		D1BB1F0B27CAC3B800369A20 /* AddFrindePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BB1F0A27CAC3B800369A20 /* AddFrindePresenter.swift */; };
+		D1BB1F0D27CAC55300369A20 /* FrindesNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BB1F0C27CAC55300369A20 /* FrindesNetwork.swift */; };
+		D1BB1F0F27CAC57000369A20 /* FrindesServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BB1F0E27CAC57000369A20 /* FrindesServices.swift */; };
+		D1BB1F1127CACE6900369A20 /* AllFrindesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BB1F1027CACE6900369A20 /* AllFrindesModel.swift */; };
 		D1CF419B27C8135900C6E6CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CF419A27C8135900C6E6CB /* AppDelegate.swift */; };
 		D1CF41A427C8135E00C6E6CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1CF41A327C8135E00C6E6CB /* Assets.xcassets */; };
 		D1CF41A727C8135E00C6E6CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1CF41A527C8135E00C6E6CB /* LaunchScreen.storyboard */; };
@@ -94,6 +101,13 @@
 		D1BB1EFD27CA6FC200369A20 /* UserDefaultswWrapped.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultswWrapped.swift; sourceTree = "<group>"; };
 		D1BB1EFF27CA815500369A20 /* UIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
 		D1BB1F0127CA948A00369A20 /* ProfilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePresenter.swift; sourceTree = "<group>"; };
+		D1BB1F0327CABD5E00369A20 /* FrindesViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrindesViewCell.swift; sourceTree = "<group>"; };
+		D1BB1F0427CABD5E00369A20 /* FrindesViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FrindesViewCell.xib; sourceTree = "<group>"; };
+		D1BB1F0827CAC39E00369A20 /* FrindesViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrindesViewPresenter.swift; sourceTree = "<group>"; };
+		D1BB1F0A27CAC3B800369A20 /* AddFrindePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFrindePresenter.swift; sourceTree = "<group>"; };
+		D1BB1F0C27CAC55300369A20 /* FrindesNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrindesNetwork.swift; sourceTree = "<group>"; };
+		D1BB1F0E27CAC57000369A20 /* FrindesServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrindesServices.swift; sourceTree = "<group>"; };
+		D1BB1F1027CACE6900369A20 /* AllFrindesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllFrindesModel.swift; sourceTree = "<group>"; };
 		D1CF419727C8135900C6E6CB /* ChatApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1CF419A27C8135900C6E6CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1CF41A327C8135E00C6E6CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -232,6 +246,15 @@
 				D1BB1EF127CA408700369A20 /* GetImageView.xib */,
 			);
 			path = SelectedImage;
+			sourceTree = "<group>";
+		};
+		D1BB1F0727CABE5D00369A20 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				D1BB1F0427CABD5E00369A20 /* FrindesViewCell.xib */,
+				D1BB1F0327CABD5E00369A20 /* FrindesViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		D1CF418E27C8135900C6E6CB = {
@@ -406,8 +429,10 @@
 		D1DC8F3727C94F000002564A /* ShowFrindes */ = {
 			isa = PBXGroup;
 			children = (
+				D1BB1F0727CABE5D00369A20 /* Cell */,
 				D1DC8F3927C94FBA0002564A /* FrindesView.swift */,
 				D1DC8F3A27C94FBA0002564A /* FrindesView.xib */,
+				D1BB1F0827CAC39E00369A20 /* FrindesViewPresenter.swift */,
 			);
 			path = ShowFrindes;
 			sourceTree = "<group>";
@@ -418,6 +443,7 @@
 				D1DC8F5427C958660002564A /* Cell */,
 				D1DC8F5027C956870002564A /* AddFrindeView.swift */,
 				D1DC8F5127C956870002564A /* AddFrindeView.xib */,
+				D1BB1F0A27CAC3B800369A20 /* AddFrindePresenter.swift */,
 			);
 			path = AddFrinde;
 			sourceTree = "<group>";
@@ -486,6 +512,7 @@
 		D1DC8F6627C972D70002564A /* Friends */ = {
 			isa = PBXGroup;
 			children = (
+				D1BB1F1027CACE6900369A20 /* AllFrindesModel.swift */,
 			);
 			path = Friends;
 			sourceTree = "<group>";
@@ -493,6 +520,8 @@
 		D1DC8F6727C972DD0002564A /* Friends */ = {
 			isa = PBXGroup;
 			children = (
+				D1BB1F0C27CAC55300369A20 /* FrindesNetwork.swift */,
+				D1BB1F0E27CAC57000369A20 /* FrindesServices.swift */,
 			);
 			path = Friends;
 			sourceTree = "<group>";
@@ -628,6 +657,7 @@
 				D1BB1EF327CA408900369A20 /* GetImageView.xib in Resources */,
 				D1DC8F5327C956870002564A /* AddFrindeView.xib in Resources */,
 				D1DC8F2F27C920200002564A /* ChangePassWord.xib in Resources */,
+				D1BB1F0627CABD5E00369A20 /* FrindesViewCell.xib in Resources */,
 				D1DC8F4927C952810002564A /* ReciverChatCell.xib in Resources */,
 				D1DC8F5827C958D80002564A /* AddFrindeViewCell.xib in Resources */,
 				D1DC8F3227C923630002564A /* Profile.xib in Resources */,
@@ -742,6 +772,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1DC8F5B27C968F30002564A /* NetworkManager.swift in Sources */,
+				D1BB1F1127CACE6900369A20 /* AllFrindesModel.swift in Sources */,
 				D1DC8F4C27C952B90002564A /* SenderChatCell.swift in Sources */,
 				D1DC8F4827C952810002564A /* ReciverChatCell.swift in Sources */,
 				D1BB1EF427CA408900369A20 /* GetImageController.swift in Sources */,
@@ -750,15 +781,20 @@
 				D1BB1EF827CA52B400369A20 /* UIViewControllerExtenstion.swift in Sources */,
 				D1DC8F6927C973860002564A /* AuthenticationNetwork.swift in Sources */,
 				D1BB1F0227CA948A00369A20 /* ProfilePresenter.swift in Sources */,
+				D1BB1F0527CABD5E00369A20 /* FrindesViewCell.swift in Sources */,
 				D1BB1EF627CA440200369A20 /* ImageExtension.swift in Sources */,
 				D1BB1F0027CA815500369A20 /* UIButton.swift in Sources */,
 				D1DC8F3427C923760002564A /* Profile.swift in Sources */,
 				D1DC8F3B27C94FBA0002564A /* FrindesView.swift in Sources */,
+				D1BB1F0D27CAC55300369A20 /* FrindesNetwork.swift in Sources */,
+				D1BB1F0B27CAC3B800369A20 /* AddFrindePresenter.swift in Sources */,
 				D1DC8F1F27C904670002564A /* LoginView.swift in Sources */,
+				D1BB1F0F27CAC57000369A20 /* FrindesServices.swift in Sources */,
 				D1DC8F3F27C9518E0002564A /* ChatView.swift in Sources */,
 				D1BB1EFA27CA5B3A00369A20 /* AuthenticationServices.swift in Sources */,
 				D1DC8F6127C96F710002564A /* NetworkError.swift in Sources */,
 				D1DC8F5227C956870002564A /* AddFrindeView.swift in Sources */,
+				D1BB1F0927CAC39E00369A20 /* FrindesViewPresenter.swift in Sources */,
 				D1BB1EFC27CA5D1200369A20 /* UserModel.swift in Sources */,
 				D1DC8F2B27C91B860002564A /* UIViewExtension.swift in Sources */,
 				D1BB1EFE27CA6FC200369A20 /* UserDefaultswWrapped.swift in Sources */,
