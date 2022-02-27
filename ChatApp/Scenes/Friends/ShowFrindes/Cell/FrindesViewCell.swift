@@ -21,7 +21,7 @@ class FrindesViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func setCell(name : String , phone : String ) {
+    func setCell(name : String , phone : String) {
         lblFrindePhone.text = phone
         lblFrindeName.text = name
     }

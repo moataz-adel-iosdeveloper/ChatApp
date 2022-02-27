@@ -9,7 +9,12 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddFrindeView" customModule="ChatApp" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddFrindeView" customModule="ChatApp" customModuleProvider="target">
+            <connections>
+                <outlet property="tableFrindes" destination="IFS-Jw-2xh" id="OFw-nd-HUw"/>
+                <outlet property="view" destination="IQe-mr-zQl" id="uKL-Mo-DNs"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="IQe-mr-zQl">
             <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
@@ -18,6 +23,11 @@
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="IFS-Jw-2xh">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="411"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="lmh-pa-126"/>
+                        <outlet property="delegate" destination="-1" id="2oX-Wn-BzF"/>
+                        <outlet property="prefetchDataSource" destination="-1" id="b9c-f4-Cdk"/>
+                    </connections>
                 </tableView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N33-DL-gg7">
                     <rect key="frame" x="30" y="419" width="260" height="45"/>
@@ -34,6 +44,9 @@
                             <real key="value" value="15"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="buttonSelectedFrinde:" destination="-1" eventType="touchUpInside" id="Wj2-8m-g5e"/>
+                    </connections>
                 </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="khi-cL-rDC"/>

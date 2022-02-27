@@ -11,4 +11,6 @@ struct domainUrl {
     
     static var mainDomain = "https://task-ksa.herokuapp.com/"
     
+    static let socketDomain = "https://task-ksa.herokuapp.com/chat"
+    
 }

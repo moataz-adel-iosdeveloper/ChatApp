@@ -58,7 +58,7 @@ extension RegisterView : RegisterViewProtocol {
     
     func RegisterSuccess() {
         self.buttonSingup.hideLoading()
-        let vc = FrindesView(nibName: "FrindesView", bundle: nil)
+        let vc = FrindesView()
         self.navigationController?.pushViewController(vc, animated: true)
     }
     

@@ -53,7 +53,7 @@ class LoginView: UIViewController {
 extension LoginView : LoginViewProtocol {
     func loginSuccess() {
         self.buttonSingin.hideLoading()
-        let vc = FrindesView(nibName: "FrindesView", bundle: nil)
+        let vc = FrindesView()
         self.navigationController?.pushViewController(vc, animated: true)
     }
     

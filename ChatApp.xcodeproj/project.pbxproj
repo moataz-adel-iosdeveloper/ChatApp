@@ -10,6 +10,8 @@
 		2F71785DA78C4A1E2D467A78 /* Pods_ChatApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04A58DEE4976014BD0B8FBA5 /* Pods_ChatApp.framework */; };
 		3BA47B8558E581D765ACC150 /* libPods-ChatAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FE3671953E3326BEB648D92 /* libPods-ChatAppTests.a */; };
 		8F2BC3196CF17A93720A028F /* libPods-ChatAppUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9609199A31429EB47C7F98AF /* libPods-ChatAppUITests.a */; };
+		D16BFA8927CB07D700822DA5 /* SocketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16BFA8827CB07D700822DA5 /* SocketManager.swift */; };
+		D16BFA8C27CB084600822DA5 /* SocketUrls.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16BFA8B27CB084600822DA5 /* SocketUrls.swift */; };
 		D1BB1EF327CA408900369A20 /* GetImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1BB1EF127CA408700369A20 /* GetImageView.xib */; };
 		D1BB1EF427CA408900369A20 /* GetImageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BB1EF227CA408900369A20 /* GetImageController.swift */; };
 		D1BB1EF627CA440200369A20 /* ImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BB1EF527CA440200369A20 /* ImageExtension.swift */; };
@@ -92,6 +94,8 @@
 		8693BF74D009DE3F5496D8F6 /* Pods-ChatAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatAppTests.debug.xcconfig"; path = "Target Support Files/Pods-ChatAppTests/Pods-ChatAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		91A9D71D2FFDF6291555004C /* Pods-ChatAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatAppTests.release.xcconfig"; path = "Target Support Files/Pods-ChatAppTests/Pods-ChatAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		9609199A31429EB47C7F98AF /* libPods-ChatAppUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ChatAppUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D16BFA8827CB07D700822DA5 /* SocketManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketManager.swift; sourceTree = "<group>"; };
+		D16BFA8B27CB084600822DA5 /* SocketUrls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketUrls.swift; sourceTree = "<group>"; };
 		D1BB1EF127CA408700369A20 /* GetImageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GetImageView.xib; sourceTree = "<group>"; };
 		D1BB1EF227CA408900369A20 /* GetImageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetImageController.swift; sourceTree = "<group>"; };
 		D1BB1EF527CA440200369A20 /* ImageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageExtension.swift; sourceTree = "<group>"; };
@@ -189,6 +193,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D16BFA8A27CB07F300822DA5 /* SocketManager */ = {
+			isa = PBXGroup;
+			children = (
+				D16BFA8827CB07D700822DA5 /* SocketManager.swift */,
+			);
+			path = SocketManager;
+			sourceTree = "<group>";
+		};
 		D192AA4C27C8199D00810E89 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -202,6 +214,7 @@
 		D192AA4D27C819BE00810E89 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				D16BFA8A27CB07F300822DA5 /* SocketManager */,
 				D1BB1EF027CA403900369A20 /* SelectedImage */,
 				D1DC8F5927C968570002564A /* NetworkManager */,
 				D1DC8F2927C91B640002564A /* Extension */,
@@ -374,6 +387,7 @@
 				D1DC8F1727C8F8310002564A /* AuthUrls.swift */,
 				D1DC8F1927C8F85D0002564A /* FriendsUrls.swift */,
 				D1DC8F1B27C8F8AB0002564A /* domainUrl.swift */,
+				D16BFA8B27CB084600822DA5 /* SocketUrls.swift */,
 			);
 			path = Urls;
 			sourceTree = "<group>";
@@ -783,6 +797,7 @@
 				D1BB1F0227CA948A00369A20 /* ProfilePresenter.swift in Sources */,
 				D1BB1F0527CABD5E00369A20 /* FrindesViewCell.swift in Sources */,
 				D1BB1EF627CA440200369A20 /* ImageExtension.swift in Sources */,
+				D16BFA8927CB07D700822DA5 /* SocketManager.swift in Sources */,
 				D1BB1F0027CA815500369A20 /* UIButton.swift in Sources */,
 				D1DC8F3427C923760002564A /* Profile.swift in Sources */,
 				D1DC8F3B27C94FBA0002564A /* FrindesView.swift in Sources */,
@@ -800,6 +815,7 @@
 				D1BB1EFE27CA6FC200369A20 /* UserDefaultswWrapped.swift in Sources */,
 				D1DC8F1C27C8F8AB0002564A /* domainUrl.swift in Sources */,
 				D1DC8F1827C8F8310002564A /* AuthUrls.swift in Sources */,
+				D16BFA8C27CB084600822DA5 /* SocketUrls.swift in Sources */,
 				D1CF419B27C8135900C6E6CB /* AppDelegate.swift in Sources */,
 				D1DC8F2327C90ED20002564A /* RegisterView.swift in Sources */,
 				D1DC8F2827C90F3A0002564A /* RegisterViewPresenter.swift in Sources */,

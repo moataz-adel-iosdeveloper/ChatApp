@@ -53,7 +53,7 @@ class ProfilePresenter : ProfilePresenterProtocol {
     
     private func validationUpdateProfile(phoneNumber: String?, img: UIImage?, userName: String?) -> String {
         var errorMessage = ""
-        if phoneNumber == "" &&  userName == "" && img == nil{
+        if phoneNumber == "" ||  userName == "" || img == nil{
             errorMessage = "nothing to update"
         }
         return errorMessage
